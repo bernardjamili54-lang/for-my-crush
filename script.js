@@ -1,19 +1,15 @@
-// =========================
-// CONTACT FORM
-// =========================
+const musicButton = document.getElementById("musicButton");
+const favoriteSong = document.getElementById("favoriteSong");
 
-const contactForm = document.getElementById("contactForm");
+musicButton.addEventListener("click", function() {
 
-contactForm.addEventListener("submit", function(event) {
-
-```
-event.preventDefault();
-
-alert("Thank you for your message! ♡");
-
-contactForm.reset();
-```
-
+    if (favoriteSong.paused) {
+        favoriteSong.play();
+        musicButton.classList.add("playing");
+    } else {
+        favoriteSong.pause();
+        musicButton.classList.remove("playing");
+    }
 });
 
 // =========================
