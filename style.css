@@ -569,4 +569,18 @@ h2 {
 }
 
 }
+.music-card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    background: #fff5f7;
+}
+
+.music-card.playing {
+    background: #f8dde5;
+    transform: scale(1.02);
+}
 
