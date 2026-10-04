@@ -3,13 +3,16 @@ const favoriteSong = document.getElementById("favoriteSong");
 
 musicButton.addEventListener("click", function() {
 
-    if (favoriteSong.paused) {
-        favoriteSong.play();
-        musicButton.classList.add("playing");
-    } else {
-        favoriteSong.pause();
-        musicButton.classList.remove("playing");
-    }
+```
+if (favoriteSong.paused) {
+    favoriteSong.play();
+    musicButton.classList.add("playing");
+} else {
+    favoriteSong.pause();
+    musicButton.classList.remove("playing");
+}
+```
+
 });
 
 // =========================
@@ -23,4 +26,3 @@ console.log("Welcome to my little website! 🌷");
 ```
 
 });
-
