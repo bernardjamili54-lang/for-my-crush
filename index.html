@@ -22,10 +22,7 @@
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- Navigation -->
     <nav>
         <a href="#home">home</a>
         <a href="#about">about</a>
@@ -36,10 +33,7 @@
     </nav>
 
 
-    <!-- =========================
-         HOME
-    ========================== -->
-
+    <!-- Home -->
     <section id="home" class="hero">
 
         <div class="hero-text">
@@ -70,10 +64,7 @@
     </section>
 
 
-    <!-- =========================
-         ABOUT ME
-    ========================== -->
-
+    <!-- About Me -->
     <section id="about">
 
         <p class="section-label">
@@ -97,9 +88,8 @@
                 </p>
 
                 <p>
-                    I created this space to share a few little pieces
-                    of who I am, the things I enjoy, and the dreams
-                    I hope to achieve someday.
+                    I created this space to share a few little pieces of who I am,
+                    the things I enjoy, and the dreams I hope to achieve someday.
                 </p>
 
                 <p>
@@ -114,10 +104,7 @@
     </section>
 
 
-    <!-- =========================
-         HOBBIES
-    ========================== -->
-
+    <!-- Hobbies -->
     <section id="hobbies">
 
         <p class="section-label">
@@ -131,66 +118,47 @@
         <div class="cards">
 
             <div class="card">
-
                 <span>🎶</span>
 
-                <h3>
-                    Music
-                </h3>
+                <h3>Music</h3>
 
                 <p>
                     I love listening to music and discovering songs
                     that match my mood.
                 </p>
-
             </div>
 
-
             <div class="card">
-
                 <span>🧶</span>
 
-                <h3>
-                    Crafts
-                </h3>
+                <h3>Crafts</h3>
 
                 <p>
                     Making little things with my hands is one of
                     my favorite ways to relax.
                 </p>
-
             </div>
 
-
             <div class="card">
-
                 <span>🌅</span>
 
-                <h3>
-                    Sunsets
-                </h3>
+                <h3>Sunsets</h3>
 
                 <p>
                     I enjoy peaceful places, beautiful skies,
                     and watching the sunset.
                 </p>
-
             </div>
 
-
             <div class="card">
-
                 <span>💃</span>
 
-                <h3>
-                    Dancing
-                </h3>
+                <h3>Dancing</h3>
 
                 <p>
                     Sometimes all I need is good music
                     and a little dancing.
                 </p>
-
             </div>
 
         </div>
@@ -198,10 +166,7 @@
     </section>
 
 
-    <!-- =========================
-         FAVORITES
-    ========================== -->
-
+    <!-- Favorites -->
     <section id="favorites">
 
         <p class="section-label">
@@ -214,12 +179,8 @@
 
         <div class="favorites">
 
-
-            <!-- =====================
-                 FAVORITE FOOD
-            ====================== -->
-
-            <div class="food-card" id="foodButton">
+            <!-- Favorite Food -->
+            <div class="favorite-card" id="foodButton">
 
                 <span>🍰</span>
 
@@ -231,39 +192,8 @@
             </div>
 
 
-            <!-- Food Popup -->
-
-            <div class="food-popup" id="foodPopup">
-
-                <div class="food-popup-content">
-
-                    <button class="close-food" id="closeFood">
-                        ×
-                    </button>
-
-                    <img
-                        src="favfood.webp"
-                        alt="My favorite food"
-                    >
-
-                    <h3>
-                        My favorite food ♡
-                    </h3>
-
-                    <p>
-                        One of my favorite things to eat! 🍰
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =====================
-                 FAVORITE SONG
-            ====================== -->
-
-            <div class="music-card" id="musicButton">
+            <!-- Favorite Song -->
+            <div class="favorite-card music-card" id="musicButton">
 
                 <span>🎧</span>
 
@@ -273,22 +203,14 @@
                 </p>
 
                 <audio id="favoriteSong">
-
-                    <source
-                        src="Music (2).mp3"
-                        type="audio/mpeg"
-                    >
-
+                    <source src="Music (2).mp3" type="audio/mpeg">
                 </audio>
 
             </div>
 
 
-            <!-- =====================
-                 FAVORITE PLACE
-            ====================== -->
-
-            <div class="place-card" id="placeButton">
+            <!-- Favorite Place -->
+            <div class="favorite-card" id="placeButton">
 
                 <span>🌊</span>
 
@@ -300,40 +222,8 @@
             </div>
 
 
-            <!-- Place Popup -->
-
-            <div class="place-popup" id="placePopup">
-
-                <div class="place-popup-content">
-
-                    <button class="close-place" id="closePlace">
-                        ×
-                    </button>
-
-                    <img
-                        src="myfavplace.jpg"
-                        alt="My favorite place"
-                    >
-
-                    <h3>
-                        My favorite place ♡
-                    </h3>
-
-                    <p>
-                        A peaceful place where I can relax
-                        and enjoy the view. 🌊
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =====================
-                 FAVORITE COLOR
-            ====================== -->
-
-            <div class="color-card" id="colorButton">
+            <!-- Favorite Color -->
+            <div class="favorite-card" id="colorButton">
 
                 <span>🌸</span>
 
@@ -344,52 +234,97 @@
 
             </div>
 
-
-            <!-- Color Popup -->
-
-            <div class="color-popup" id="colorPopup">
-
-                <div class="color-popup-content">
-
-                    <button class="close-color" id="closeColor">
-                        ×
-                    </button>
-
-                    <div class="pink-decoration">
-                        🌸 🎀 🌷
-                    </div>
-
-                    <div class="pink-box">
-                        ♡
-                    </div>
-
-                    <h3>
-                        My favorite color ♡
-                    </h3>
-
-                    <p>
-                        Soft pink will always have a special
-                        place in my heart. 🌸
-                    </p>
-
-                    <p>
-                        It feels sweet, calm, gentle,
-                        and a little bit dreamy. 🎀
-                    </p>
-
-                </div>
-
-            </div>
-
         </div>
 
     </section>
 
 
-    <!-- =========================
-         GOALS
-    ========================== -->
+    <!-- Favorite Food Popup -->
+    <div class="popup" id="foodPopup">
 
+        <div class="popup-content">
+
+            <button class="close-button" id="closeFood">
+                ×
+            </button>
+
+            <img src="favfood.webp" alt="My favorite food">
+
+            <h3>
+                My favorite food ♡
+            </h3>
+
+            <p>
+                One of my favorite things to eat! 🍰
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Favorite Place Popup -->
+    <div class="popup" id="placePopup">
+
+        <div class="popup-content">
+
+            <button class="close-button" id="closePlace">
+                ×
+            </button>
+
+            <img src="myfavplace.jpg" alt="My favorite place">
+
+            <h3>
+                My favorite place ♡
+            </h3>
+
+            <p>
+                A peaceful place where I can relax
+                and enjoy the view. 🌊
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Favorite Color Popup -->
+    <div class="popup" id="colorPopup">
+
+        <div class="popup-content pink-popup">
+
+            <button class="close-button" id="closeColor">
+                ×
+            </button>
+
+            <div class="pink-decoration">
+                🌸 🎀 🌷
+            </div>
+
+            <div class="pink-circle">
+                ♡
+            </div>
+
+            <h3>
+                My favorite color ♡
+            </h3>
+
+            <p>
+                Soft pink will always have a special
+                place in my heart. 🌸
+            </p>
+
+            <p>
+                It feels sweet, calm, gentle,
+                and a little bit dreamy. 🎀
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Goals -->
     <section id="goals">
 
         <p class="section-label">
@@ -403,46 +338,23 @@
         <div class="goal-box">
 
             <div class="goal">
-
                 <span>01</span>
-
-                <p>
-                    Keep learning new things
-                </p>
-
+                <p>Keep learning new things</p>
             </div>
 
-
             <div class="goal">
-
                 <span>02</span>
-
-                <p>
-                    Grow personally and professionally
-                </p>
-
+                <p>Grow personally and professionally</p>
             </div>
 
-
             <div class="goal">
-
                 <span>03</span>
-
-                <p>
-                    Create more beautiful memories
-                </p>
-
+                <p>Create more beautiful memories</p>
             </div>
 
-
             <div class="goal">
-
                 <span>04</span>
-
-                <p>
-                    Travel and see new places
-                </p>
-
+                <p>Travel and see new places</p>
             </div>
 
         </div>
@@ -450,10 +362,7 @@
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
+    <!-- Contact -->
     <section id="contact">
 
         <p class="section-label">
@@ -501,10 +410,7 @@
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- Footer -->
     <footer>
 
         <p>
