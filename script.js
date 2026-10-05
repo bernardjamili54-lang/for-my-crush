@@ -1,14 +1,116 @@
+// =========================
+// FAVORITE SONG
+// =========================
+
 const musicButton = document.getElementById("musicButton");
 const favoriteSong = document.getElementById("favoriteSong");
 
 musicButton.addEventListener("click", function() {
 
     if (favoriteSong.paused) {
+
         favoriteSong.play();
+
         musicButton.classList.add("playing");
+
     } else {
+
         favoriteSong.pause();
+
         musicButton.classList.remove("playing");
+
+    }
+
+});
+
+
+// =========================
+// FAVORITE FOOD
+// =========================
+
+const foodButton = document.getElementById("foodButton");
+const foodPopup = document.getElementById("foodPopup");
+const closeFood = document.getElementById("closeFood");
+
+foodButton.addEventListener("click", function() {
+
+    foodPopup.classList.add("show");
+
+});
+
+closeFood.addEventListener("click", function() {
+
+    foodPopup.classList.remove("show");
+
+});
+
+
+// =========================
+// FAVORITE PLACE
+// =========================
+
+const placeButton = document.getElementById("placeButton");
+const placePopup = document.getElementById("placePopup");
+const closePlace = document.getElementById("closePlace");
+
+placeButton.addEventListener("click", function() {
+
+    placePopup.classList.add("show");
+
+});
+
+closePlace.addEventListener("click", function() {
+
+    placePopup.classList.remove("show");
+
+});
+
+
+// =========================
+// FAVORITE COLOR
+// =========================
+
+const colorButton = document.getElementById("colorButton");
+const colorPopup = document.getElementById("colorPopup");
+const closeColor = document.getElementById("closeColor");
+
+colorButton.addEventListener("click", function() {
+
+    colorPopup.classList.add("show");
+
+});
+
+closeColor.addEventListener("click", function() {
+
+    colorPopup.classList.remove("show");
+
+});
+
+
+// =========================
+// CLOSE POPUPS BY CLICKING OUTSIDE
+// =========================
+
+foodPopup.addEventListener("click", function(event) {
+
+    if (event.target === foodPopup) {
+        foodPopup.classList.remove("show");
+    }
+
+});
+
+placePopup.addEventListener("click", function(event) {
+
+    if (event.target === placePopup) {
+        placePopup.classList.remove("show");
+    }
+
+});
+
+colorPopup.addEventListener("click", function(event) {
+
+    if (event.target === colorPopup) {
+        colorPopup.classList.remove("show");
     }
 
 });
@@ -21,28 +123,5 @@ musicButton.addEventListener("click", function() {
 window.addEventListener("load", function() {
 
     console.log("Welcome to my little website! 🌷");
-
-});
-// =========================
-// FAVORITE FOOD POPUP
-// =========================
-
-const foodButton = document.getElementById("foodButton");
-const foodPopup = document.getElementById("foodPopup");
-const closeFood = document.getElementById("closeFood");
-
-foodButton.addEventListener("click", function() {
-    foodPopup.classList.add("show");
-});
-
-closeFood.addEventListener("click", function() {
-    foodPopup.classList.remove("show");
-});
-
-foodPopup.addEventListener("click", function(event) {
-
-    if (event.target === foodPopup) {
-        foodPopup.classList.remove("show");
-    }
 
 });
